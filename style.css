@@ -1,0 +1,167 @@
+.wrapper {
+  min-height: 100vh;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  font-size: 40px;
+  font-weight: 100;
+  background-color: #22A7F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   border-bottom: 5px solid #F1F1F1 ;
+}
+section:nth-child(1) {
+  background: #fff;
+}
+section:nth-child(2) {
+  background: #F64747;
+}
+section:nth-child(3) {
+  background: #22A7F0;
+}
+section:nth-child(4) {
+  background: #F9690E;
+}
+section:nth-child(5) {
+  background: #9B59B6;
+}
+section:nth-child(6) {
+  background: #03C9A9;
+}
+section:nth-child(7) {
+  background: #ffcc00;
+}
+
+.nav__wrapper { /* this makes the nav LINES show */
+  position: fixed;
+  height: 105%; /* was 100% before to make the menu to long */
+  padding: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+        z-index: 2;
+}
+.nav {
+  margin: 0 0 0px 30px;  /* margin was 0 0 100px 30px before to make the menu to long */
+}
+
+a
+.nav__counter {
+  font-size: 24px;
+  transition: all 0.15s ease-out;
+}
+.nav__title {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0 0 0.25em;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav__body {
+  font-weight: 100;
+  font-size: 1.26vw; /* font size for 3 adjectives for each decade*/
+    color: #ffffff;
+  width: 80%;  /* this makes the 3 descriptive words wider or narrower */
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav li {
+  position: relative;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1em;
+    
+}
+.nav li:after {
+  content: "";
+  display: block;
+  border-left: 2px solid white; /* size of nav lines */
+  border-top: 2px solid white; /* size of nav lines */
+  height: 250px;
+  width: 10%;
+  position: absolute;
+  left: -30px;
+  top: 15px;
+}
+.nav li a {
+  display: block;
+  padding: 0;
+  color: #ffffff; /* changes color of nav numbers */
+  transition: all 0.15s ease-out;
+  z-index: 3;
+  width:60%; /* moves the width of the place to click in to change the timeline decade */
+  outline: 0; /* removes the dotted, white outline around the focus words */
+}
+.nav li a:hover {
+  background-color: transparent;
+  padding-left: 1em; /* how far right the number goes on a hover */
+}
+.nav li a:focus { /* background behind clicked-on chapter */
+  background-color: transparent;
+}
+.nav li.active {
+  pointer-events: none;
+  padding-left: 1em;
+}
+.nav li.active:after {
+  width: 10%; /*length of line coming out when clicked on */ 
+  height: 400px;
+  top: 35px;
+  /* margin-top: -20px;          /* ADDED moves the year and adjectives under the active line */
+}
+.nav li.active .nav__counter {
+    font-size: 50px; /* clicked on chapter number size */
+}
+.nav li.active .nav__title {
+  height: 0px; /* this moves the 3 adjectives up and down under the decade in nav menu thats active */
+  opacity: 1;
+  overflow: visible;
+      /*  width: 8vw;                 /* chapter detail paragraph widths when clicked on */
+}
+
+
+.nav li.active .nav__body {
+  height: 100px;
+  opacity: 1;
+  overflow: visible;
+}
+
+.menuBackground {
+    background-color: #000000;
+    height: 220%;  /* makes the black menu on the left side of the page longer */
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+}
+
+ul {
+    color:#000000;
+}
+
+
+p {
+    color: #000000;
+}
+
+h3 {
+    color: #000000;
+}
+
+.dateInformation {
+    margin-left: 22%;
+}
+
+.whatAndWhenHappened{
+    border-bottom: 5px solid #F1F1F1;
+    width: 100%;
+}
