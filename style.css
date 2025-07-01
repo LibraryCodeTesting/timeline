@@ -40,7 +40,7 @@ section:nth-child(7) {
 
 .nav__wrapper { /* this makes the nav LINES show */
   position: fixed;
-  height: 105%; /* was 100% before to make the menu to long */
+  height: 205%; /* was 100% before to make the menu to long */
   padding: 30px;
   display: flex;
   flex-flow: column nowrap;
