@@ -138,7 +138,7 @@ a
 
 .menuBackground {
     background-color: #000000;
-    height: 320%;  /* makes the black menu on the left side of the page longer */
+    height: 920%;  /* makes the black menu on the left side of the page longer */
     width: 20%;
     position: absolute;
     z-index: 1;
